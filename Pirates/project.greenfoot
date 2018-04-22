@@ -1,8 +1,11 @@
 #Greenfoot properties
-#Fri May 04 04:08:17 PDT 2018
-project.charset=UTF-8
+#Sun Apr 22 16:34:47 PDT 2018
+mainWindow.width=850
+class.Ocean.superclass=greenfoot.World
 version=3.0.0
+project.charset=UTF-8
+world.lastInstantiated=Ocean
 mainWindow.y=40
+class.Ocean.image=sea.png
 mainWindow.x=40
 mainWindow.height=600
-mainWindow.width=850
