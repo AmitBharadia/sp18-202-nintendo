@@ -1,8 +1,11 @@
 #Greenfoot properties
-#Fri May 04 04:08:17 PDT 2018
-project.charset=UTF-8
+#Mon Apr 23 14:39:55 PDT 2018
+mainWindow.width=850
+class.MyWorld.superclass=greenfoot.World
 version=3.0.0
+project.charset=UTF-8
+world.lastInstantiated=MyWorld
 mainWindow.y=40
 mainWindow.x=40
 mainWindow.height=600
-mainWindow.width=850
+class.Ship.superclass=greenfoot.Actor
