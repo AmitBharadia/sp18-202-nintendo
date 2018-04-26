@@ -26,4 +26,11 @@ public class Ship extends Actor
       {
         
     }
+    public int getFuel() {
+        return this.fuel;
+    }
+
+    public void setFuel(int f) {
+        this.fuel = f;
+    }
 }
