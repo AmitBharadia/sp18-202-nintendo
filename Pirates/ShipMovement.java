@@ -20,9 +20,6 @@ public class ShipMovement extends Actor implements iStrategy
         if(Greenfoot.isKeyDown("left")) {
             ship.turn(-90);
         }
-        if(ship.isAtEdge()) {
-            ship.turn(180);
-            ship.move(30);
-        }  
+        
     }
 }
