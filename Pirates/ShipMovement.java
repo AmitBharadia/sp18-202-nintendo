@@ -14,7 +14,9 @@ public class ShipMovement extends Actor implements iStrategy
             ship.move(60);
             ship.setFuel(ship.getFuel() - 1);
         }
-        
+        if(Greenfoot.isKeyDown("right")) {
+            ship.turn(90);
+        }
         if(Greenfoot.isKeyDown("left")) {
             ship.turn(-90);
         }
