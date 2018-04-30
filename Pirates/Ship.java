@@ -43,6 +43,29 @@ public class Ship extends Actor
         
     }
     
+    public String toString() {
+        return "Fuel: " + fuel + "\t\t\tScore: " + score + "\nHeading: " + directionString();
+               
+    }
+   
+    private String directionString() {
+        if(getRotation() == 0) {
+            return "E";
+        }
+        else if(getRotation() == 90) {
+            return "S";
+        }
+        else if(getRotation() == 180) {
+            return "W";
+        }
+        else if(getRotation() == 270) {
+            return "N";
+        }
+        else {
+            return "...";
+        }
+    }
+    
     public int getFuel() {
         return this.fuel;
     }
