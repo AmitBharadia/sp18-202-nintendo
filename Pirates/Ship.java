@@ -40,7 +40,37 @@ public class Ship extends Actor
      */
     public void act() 
       {
-        
+        System.out.println(toString());
+        getWorld().showText("Fuel: " + fuel,50,30);
+        getWorld().showText("Heading: " + directionString(),70,60);
+        getWorld().showText("Score: " + score,730,30);
+        if(fuel > 0) {
+            if(isTouching(Gems.class)) {
+                removeTouching(Gems.class);
+                score += 10;
+                gemsFactory = new GemsFactory();
+                getWorld().addObject(gemsFactory.getActor(), (int)(10*Math.random())*60+30, (int)(7*Math.random())*60+30);
+            }
+            if(isTouching(Fuel.class)) {
+                removeTouching(Fuel.class);
+                fuel += 10;
+            }
+            if(isTouching(Iceberg.class)) {
+                this.setState(shipWreckedState);
+                this.display();
+                Greenfoot.stop();
+            }
+        }
+        if((int)(Math.random()*30) == 0) {
+            getWorld().addObject(icebergFactory.getActor(), (int)(10*Math.random())*60+30, (int)(8*Math.random())*60+30);
+        }
+        if((int)(Math.random()*40) == 0) {
+            getWorld().addObject(fuelFactory.getActor(), (int)(10*Math.random())*60+30, (int)(8*Math.random())*60+30);
+        }
+        if(fuel == 0) {
+            this.display();
+            Greenfoot.stop();
+        }
     }
     
     public String toString() {
