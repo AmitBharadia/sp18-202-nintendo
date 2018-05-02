@@ -1,9 +1,3 @@
-/**
- * Write a description of class Context here.
- * 
- * @author (Rohit Sharma) 
- * @version (a version number or a date)
- */
 import greenfoot.*;
 
 public class Context  
@@ -17,4 +11,3 @@ public class Context
         this.strategy.move(a);
     }
 }
-

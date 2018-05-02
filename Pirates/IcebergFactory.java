@@ -2,7 +2,8 @@ import greenfoot.*;
 /**
  * Write a description of class icebergFactory here.
  * 
- * @author (Tarun Arora) 
+ * @author (your name) 
+ * @version (a version number or a date)
  */
 public class IcebergFactory extends OceanTreasures 
 {

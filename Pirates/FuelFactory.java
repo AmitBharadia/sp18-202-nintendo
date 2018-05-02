@@ -2,7 +2,7 @@ import greenfoot.*;
 /**
  * Write a description of class MushroomFactory here.
  * 
- * @author (Tarun Arora)
+ * @author ()
  */
 public class FuelFactory extends OceanTreasures
 {

@@ -14,5 +14,7 @@ public class Iceberg extends Actor
      */
     public void act() 
     {
+        removeTouching(Gems.class);
+        removeTouching(Fuel.class);
     }    
 }

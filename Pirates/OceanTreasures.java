@@ -3,7 +3,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * Abstract Factory Class
  * 
- * @author (Tarun Arora)
+ * @author ()
  */
 public abstract class OceanTreasures
 {   

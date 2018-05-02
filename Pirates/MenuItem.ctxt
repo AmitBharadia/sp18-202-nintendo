@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=MenuItem
+comment0.text=\n\ Write\ a\ description\ of\ class\ MenuItem\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=filename\ x\ y\ world
+comment1.target=MenuItem(java.lang.String,\ int,\ int,\ greenfoot.World)
+comment2.params=
+comment2.target=void\ act()
+comment3.params=cmd
+comment3.target=void\ setCommand(Command)
+comment4.params=
+comment4.target=void\ invoke()
+numComments=5
