@@ -1,21 +1,15 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Ship here.
+ * Write a description of class Boat here.
  * 
- * @author (Tarun Arora) 
- * @version (a version number or a date)
  */
 public class Ship extends Actor
-{   iShipState shipWreckedState, shipState;
+{
+    iShipState shipWreckedState, shipState;
     private int fuel;
     private int score;
     private int count;
-        
-    OceanTreasures food;
-    OceanTreasures fuelFactory;
-    OceanTreasures gemsFactory;
-    OceanTreasures icebergFactory;
     
     private Context shipContext;
     
@@ -23,6 +17,7 @@ public class Ship extends Actor
     OceanTreasures fuelFactory;
     OceanTreasures gemsFactory;
     OceanTreasures icebergFactory;
+   
     public Ship() {
         fuel = 30;
         score = 0;
@@ -52,6 +47,7 @@ public class Ship extends Actor
         getWorld().showText("Heading: " + directionString(),70,60);
         getWorld().showText("Score: " + score,730,30);
         if(fuel > 0) {
+            shipContext.executeMovement(this);
             if(isTouching(Gems.class)) {
                 removeTouching(Gems.class);
                 score += 10;
@@ -75,6 +71,7 @@ public class Ship extends Actor
             getWorld().addObject(fuelFactory.getActor(), (int)(10*Math.random())*60+30, (int)(8*Math.random())*60+30);
         }
         if(fuel == 0) {
+            this.setState(shipWreckedState);
             this.display();
             Greenfoot.stop();
         }
@@ -110,8 +107,8 @@ public class Ship extends Actor
     public void setFuel(int f) {
         this.fuel = f;
     }
-    
-    //STATE PATTERN
+     
+        //STATE PATTERN
     public void display() {
         shipState.display();
     }
@@ -122,6 +119,4 @@ public class Ship extends Actor
     {
         return shipWreckedState;
     }
-    
-
 }
