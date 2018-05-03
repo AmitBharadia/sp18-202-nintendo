@@ -45,8 +45,9 @@ public class MenuWorld extends World
     
     public void setupMenuSystem() {
         
-        MenuItem start = new MenuItem("play1.png",getWidth()/2, 280,this) ;
+        MenuItem start = new MenuItem("playButton.png",getWidth()/2, 180,this) ;
         MenuItem help = new MenuItem("help.png",getWidth()/2, 380,this) ;
+        
        
         Command triggerStart = new ConcreteCommand();
         Command triggerHelp = new ConcreteCommand();
@@ -63,9 +64,8 @@ public class MenuWorld extends World
         triggerHelp.setReceiver(
                 new Receiver() {
                     public void doAction() {
-                       
-                     
-             
+                       HelpMenu hm = new HelpMenu();
+                       Greenfoot.setWorld(hm);
                     }
                 }
         );
