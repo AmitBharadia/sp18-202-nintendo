@@ -40,3 +40,7 @@
 ### Team’s Sprint Task Sheet
 https://docs.google.com/spreadsheets/d/1uMhdGAArmFjbeyOLymzqEFupie901vIo08q7DsNsNBI/edit?usp=sharing
 
+### Team's Project ad Video on Youtube
+https://youtu.be/SLBnjXfY4VQ
+
+
