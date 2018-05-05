@@ -43,4 +43,9 @@ https://docs.google.com/spreadsheets/d/1uMhdGAArmFjbeyOLymzqEFupie901vIo08q7DsNs
 ### Team's Project ad Video on Youtube
 https://youtu.be/SLBnjXfY4VQ
 
+### Powerpoint Presentation
+https://docs.google.com/presentation/d/16tECu4P52HB8RpfzbaelO9IFQoIl5eKOXnKobU3aBH0/edit?usp=sharing
+
+
+
 
